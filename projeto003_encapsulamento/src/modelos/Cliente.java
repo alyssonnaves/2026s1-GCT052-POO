@@ -5,7 +5,7 @@ public class Cliente {
     private String nome;
     private String cpf;
     private String dataNascimento;
-    // metodos
+    // metodos de acesso
     public String getNome() {
         return nome;
     }
@@ -25,7 +25,7 @@ public class Cliente {
         this.dataNascimento = dataNascimento;
     }
 
-    // metodos de acesso
+    
     
     
 
