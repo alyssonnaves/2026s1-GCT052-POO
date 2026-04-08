@@ -5,7 +5,9 @@ public class Cliente {
     private String nome;
     private String cpf;
     private String dataNascimento;
-    // metodos de acesso
+    private Endereco end;
+
+    // metodos de acesso - modificadores e acessadores
     public String getNome() {
         return nome;
     }
@@ -24,11 +26,42 @@ public class Cliente {
     public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
+    public Endereco getEnd() {
+        return end;
+    }
+    public void setEnd(Endereco end) {
+        this.end = end;
+    }
+}
 
-    
-    
-    
+class Endereco{
+    String rua;
+    String bairro;
+    int numero;
 
+    String getRua(){
+        return rua;
+    }
+
+    void setRua(String r){
+        this.rua = r;
+    }
+
+    public String getBairro() {
+        return bairro;
+    }
+
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
 
     
 }
