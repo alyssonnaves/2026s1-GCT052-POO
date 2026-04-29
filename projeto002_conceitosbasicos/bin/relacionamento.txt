@@ -1,0 +1,21 @@
+
+CENARIO 1
+Aluno pode fazer 1  disciplinas apenas
+Disciplina pode ter varios alunos
+
+Disciplina  1 - N
+   - lista de alunos  ED 
+
+
+CENARIO 2   N - N
+Aluno pode fazer varias disciplinas
+Disciplina pode ter varios alunos
+
+Matricula
+    - disciplina - aluno
+    111,  10
+    111,  23
+    111,  65
+    
+    114, 10
+    114, 18

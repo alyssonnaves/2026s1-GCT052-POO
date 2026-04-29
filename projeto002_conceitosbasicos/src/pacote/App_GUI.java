@@ -1,3 +1,4 @@
+package pacote;
 import javax.swing.JOptionPane;
 
 public class App_GUI {

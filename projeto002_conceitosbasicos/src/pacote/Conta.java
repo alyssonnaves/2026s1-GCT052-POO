@@ -1,9 +1,11 @@
-class Conta {
+package pacote;
+
+public class Conta {
     // atributos
     int numero;
     String dono;
     double saldo;
-    double limite;
+    public double limite;
 
     // construtor
     Conta(int numero, String nome){
