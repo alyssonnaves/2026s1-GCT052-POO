@@ -44,7 +44,7 @@ public class Usuario {
     // sobreescrita
     @Override   // anotacao opcional
     public String toString(){
-        return "matricula: " + getMatricula() +"\nnome: " + getNome() + "\nEmail: " + getEmail();
+        return "matricula: " + getMatricula() +"\nnome: " + getNome() + "\nEmail: " + getEmail() + "\nlimite de emprestimo: " + getLimiteEmprestimo();
     }
 
 }

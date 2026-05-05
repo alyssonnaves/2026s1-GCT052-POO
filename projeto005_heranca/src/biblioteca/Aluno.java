@@ -28,6 +28,7 @@ public class Aluno extends Usuario{
         this.periodo = periodo;
     }
 
+    @Override
     public String toString(){
         return super.toString()+"\ncurso: " + getCurso() + "\nPeriodo: " + getPeriodo();        
     }

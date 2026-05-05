@@ -9,6 +9,10 @@ public class Main {
         // System.out.println(usuario001.toString());
         System.out.println("----ALUNO----");
         System.out.println(aluno001);
+        Professor professor001 = new Professor("789", "Alan Turing", "turing@email.com");
+        System.out.println("----PROFESSOR----");
+        System.out.println(professor001);
+        
         
     }
 }
