@@ -10,7 +10,8 @@ public class Usuario {
         setNome(nome);
         setMatricula(matricula);
         setEmail(email);
-        this.limiteEmprestimo = 2;
+        // this.limiteEmprestimo = 2;
+        setLimiteEmprestimo();
     }
 
     public String getMatricula() {
@@ -41,10 +42,18 @@ public class Usuario {
         return limiteEmprestimo;
     }
     
+    protected void setLimiteEmprestimo(){
+        System.out.println("setLimiteEmprestimo - Usuario");
+        this.limiteEmprestimo = 2;
+    }
+
     // sobreescrita
     @Override   // anotacao opcional
     public String toString(){
-        return "matricula: " + getMatricula() +"\nnome: " + getNome() + "\nEmail: " + getEmail() + "\nlimite de emprestimo: " + getLimiteEmprestimo();
+        return "----"+tipo()+"----"+"\nmatricula: " + getMatricula() +"\nnome: " + getNome() + "\nEmail: " + getEmail() + "\nlimite de emprestimo: " + getLimiteEmprestimo();
     }
 
+    public String tipo(){
+        return "USUARIO";
+    }
 }

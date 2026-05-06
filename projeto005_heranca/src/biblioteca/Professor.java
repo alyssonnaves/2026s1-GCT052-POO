@@ -5,7 +5,7 @@ public class Professor extends Usuario{
 
     public Professor(String matricula, String nome, String email) {
         super(matricula, nome, email);
-        this.limiteEmprestimo = 5;
+        // this.limiteEmprestimo = 5;
         setDepartamento("ICTIN");
     }
 
@@ -18,9 +18,19 @@ public class Professor extends Usuario{
     }
 
     @Override
+    protected void setLimiteEmprestimo(){
+        System.out.println("setLimiteEmprestimo - Professor");
+        this.limiteEmprestimo = 5;
+    }
+
+    @Override
     public String toString() {
         return super.toString()+"\ndepartamento: " + this.getDepartamento();
     }   
     
+    @Override
+    public String tipo(){
+        return "PROFESSOR";
+    }
     
 }
