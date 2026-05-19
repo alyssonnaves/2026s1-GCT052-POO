@@ -1,5 +1,7 @@
 package biblioteca;
 
+import java.util.Scanner;
+
 public class Professor extends Usuario{
     private String departamento;
 
@@ -9,6 +11,19 @@ public class Professor extends Usuario{
         setDepartamento("ICTIN");
     }
 
+    @Override
+    public boolean autentica(){
+        Scanner input = new Scanner(System.in);
+        String minuscula = getNome().toLowerCase();
+        System.out.print("Digite sua senha: ");
+        String senha = input.nextLine();
+        input.close();
+        if (senha.equals(minuscula)){ // senha==minuscula
+            return true;
+        }else{
+            return false;
+        }
+    }
     public String getDepartamento() {
         return departamento;
     }

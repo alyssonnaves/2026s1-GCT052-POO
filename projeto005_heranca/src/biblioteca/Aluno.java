@@ -1,5 +1,8 @@
 package biblioteca;
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class Aluno extends Usuario{
     private String curso;
     private int periodo;
@@ -10,6 +13,25 @@ public class Aluno extends Usuario{
         this.curso = curso;
         this.periodo = 1;
         // this.limiteEmprestimo = 3;
+    }
+
+    @Override
+    public boolean autentica(){
+        Random rnd = new Random();
+        Scanner input = new Scanner(System.in);
+        int num1 = rnd.nextInt(1,100);
+        int num2 = rnd.nextInt(1,100);
+        System.out.println("Autentica aluno");
+        System.out.println(num1+ "+" + num2);
+        System.out.print("Digite: ");
+        int resultado = input.nextInt();
+
+        if (resultado == (num1+num2)){
+            return true;
+        }else{
+            return false;
+        }
+
     }
 
     public String getCurso() {

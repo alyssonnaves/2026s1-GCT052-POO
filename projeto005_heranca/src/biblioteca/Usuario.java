@@ -1,6 +1,6 @@
 package biblioteca;
 
-public class Usuario {
+public abstract class Usuario {
     private String matricula;
     private String nome;
     private String email;
@@ -13,6 +13,8 @@ public class Usuario {
         // this.limiteEmprestimo = 2;
         setLimiteEmprestimo();
     }
+
+    public abstract boolean autentica();
 
     public String getMatricula() {
         return matricula;
@@ -32,6 +34,12 @@ public class Usuario {
 
     public String getEmail() {
         return email;
+    }
+    
+    public static void cadastro(Usuario u){
+        String nome = u.getNome();
+        String email = u.getEmail();
+        System.out.println("--"+u.tipo()+"--");
     }
 
     public void setEmail(String email) {
